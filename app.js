@@ -3,11 +3,11 @@ const app= express();
 const hbs = require('hbs');
 const port=8000;
 const path=require('path');
-const staticpath=path.join(__dirname,"../public");
-const template_path = path.join(__dirname, "../templates/views");
+const staticpath=path.join(__dirname,"./public");
+const template_path = path.join(__dirname, "./templates/views");
 console.log(template_path);
 
-const partials_path = path.join(__dirname, "../templates/partials");
+const partials_path = path.join(__dirname, "./templates/partials");
 console.log(partials_path);
 app.set('view engine', 'hbs');
 app.set("views", template_path);
